@@ -15,6 +15,7 @@ RUN gpg --no-default-keyring \
     --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg \
     --fingerprint
 
+USER root
 RUN echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
     https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
     sudo tee /etc/apt/sources.list.d/hashicorp.list
@@ -25,3 +26,5 @@ RUN apt install -y terraform
 
 # Ansible
 RUN pipx install --include-deps ansible
+
+USER debug
