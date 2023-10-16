@@ -6,6 +6,7 @@ on:
     paths:
       - "devops/**"
       - ".github/workflows/docker-publish-devops.yml"
+  workflow_dispatch:
 
 env:
   # github.repository as <account>/<repo>
