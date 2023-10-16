@@ -19,9 +19,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/totaldebug/pyarr">
-    <img src=".github/img/logo.png" alt="Logo">
-  </a>
 
   <h3 align="center">DebugBox</h3>
 
