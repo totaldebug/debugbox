@@ -25,7 +25,8 @@ RUN apt install -y \
         python3-sphinx \
         python3-pip \
         nodejs \
-        npm
+        npm \
+        wget
 
 # Install required dev packages
 RUN npm install -g commitizen && \
