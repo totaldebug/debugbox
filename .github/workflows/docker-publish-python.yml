@@ -1,5 +1,4 @@
-name: Docker-Base
-
+name: Docker-Python
 on:
   push:
     branches: [ "main" ]

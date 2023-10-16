@@ -1,4 +1,4 @@
-name: Docker-Base
+name: Docker-DevOps
 
 on:
   push:
