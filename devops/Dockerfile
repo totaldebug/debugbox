@@ -7,10 +7,21 @@ FROM totaldebug/debugbox:base
 ARG TARGETARCH
 
 # Terraform
-RUN wget "https://releases.hashicorp.com/terraform/1.6.1/terraform_1.6.1_linux_$TARGETARCH.zip" \
-    && unzip "terraform_1.6.1_linux_$TARGETARCH.zip" \
-    && sudo install terraform /usr/local/bin/ \
-    && sudo rm -rf "terraform_1.6.1_linux_$TARGETARCH.zip" terraform
+RUN wget -O- https://apt.releases.hashicorp.com/gpg | \
+    gpg --dearmor | \
+    tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+
+RUN gpg --no-default-keyring \
+    --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg \
+    --fingerprint
+
+RUN echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+    https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
+    tee /etc/apt/sources.list.d/hashicorp.list
+
+RUN apt update
+
+RUN apt install -y terraform
 
 # Ansible
 RUN pipx install --include-deps ansible
