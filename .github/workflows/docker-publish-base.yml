@@ -9,7 +9,8 @@ on:
       - "typescript/**"
       - ".github/workflows/docker-publish-devops.yml"
       - ".github/workflows/docker-publish-python.yml"
-
+  workflow_dispatch:
+  
 env:
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
