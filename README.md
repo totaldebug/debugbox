@@ -70,9 +70,7 @@ A set of Docker containers designed for use with totaldebug projects.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-* [QuickStart Guide](https://docs.totaldebug.uk/pyarr/quickstart.html)
-* [Full Documentation](https://docs.totaldebug.uk/pyarr)
-* [Release Notes](https://github.com/totaldebug/pyarr/releases)
+* [Release Notes](https://github.com/totaldebug/debugbox/releases)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,7 +95,6 @@ My projects arent possible without the support of the community, please consider
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Got something you would like to add? check out the contributing guide in the [documentation](https://docs.totaldebug.uk/pyarr/contributing.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,12 +141,12 @@ Below are a list of resources that I used to assist with this project.
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://in.totaldebug.uk
 
-[gh-last-release-date]: https://img.shields.io/github/release-date/totaldebug/pyarr?style=flat-square&label=Last%20Release%20Date&logo=github&logoColor=white
-[gh-last-commit]: https://img.shields.io/github/last-commit/totaldebug/pyarr.svg?style=flat-square&logo=github&label=Last%20Commit&logoColor=white
+[gh-last-release-date]: https://img.shields.io/github/release-date/totaldebug/debugbox?style=flat-square&label=Last%20Release%20Date&logo=github&logoColor=white
+[gh-last-commit]: https://img.shields.io/github/last-commit/totaldebug/debugbox.svg?style=flat-square&logo=github&label=Last%20Commit&logoColor=white
 
-[lines]: https://img.shields.io/tokei/lines/github/totaldebug/pyarr?style=flat-square
-[lines-url]: https://github.com/totaldebug/pyarr
-[code-size]: https://img.shields.io/github/languages/code-size/totaldebug/pyarr?style=flat-square
+[lines]: https://img.shields.io/tokei/lines/github/totaldebug/debugbox?style=flat-square
+[lines-url]: https://github.com/totaldebug/debugbox
+[code-size]: https://img.shields.io/github/languages/code-size/totaldebug/debugbox?style=flat-square
 
 [Sponsor]: https://img.shields.io/badge/sponsor-000?style=flat-square&logo=githubsponsors&logoColor=red
 [Sponsor-url]: https://github.com/sponsors/marksie1988
