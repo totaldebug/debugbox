@@ -12,12 +12,14 @@ ARG DEBIAN_FRONTEND=noninteractive
 ### ---------------
 ### Package install
 ### ---------------
+RUN apt update && apt install -y  \
+        sudo \
+        curl
 RUN curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 
 RUN apt update
 
 RUN apt install -y \
-        sudo \
         zsh \
         neofetch \
         unzip \
