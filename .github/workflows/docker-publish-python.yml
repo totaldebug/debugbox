@@ -1,5 +1,9 @@
 name: Docker-Python
 on:
+  workflow_run:
+    workflows: ["Docker-Base"]
+    types:
+      - completed
   push:
     branches: [ "main" ]
     paths:
@@ -13,6 +17,7 @@ env:
 
 jobs:
   build:
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read

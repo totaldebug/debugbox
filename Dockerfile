@@ -12,6 +12,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 ### ---------------
 ### Package install
 ### ---------------
+RUN curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+
 RUN apt update
 
 RUN apt install -y \

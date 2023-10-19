@@ -9,6 +9,7 @@ on:
       - "typescript/**"
       - ".github/workflows/docker-publish-devops.yml"
       - ".github/workflows/docker-publish-python.yml"
+      - ".github/workflows/docker-publish-typescript.yml"
   workflow_dispatch:
   
 env:
