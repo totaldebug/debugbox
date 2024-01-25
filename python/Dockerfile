@@ -7,7 +7,8 @@ FROM totaldebug/debugbox:base
 # Python upgrade
 USER root
 
-RUN apt install software-properties-common -y && \
+RUN apt update && \
+  apt install software-properties-common -y && \
   add-apt-repository ppa:deadsnakes/ppa
 
 RUN apt update && \
